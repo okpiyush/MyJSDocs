@@ -79,3 +79,37 @@ Precendence followed is :
 
 ***Decision making***
 > **File name for the below concepts** : Decisions.js
+
+Conditional operator gets resolved in true or false;
+conditional statement runs according to the boolean and condition state in it.
+The correct way to pass multiple if is to apply 
+
+Case 1:
+if(condition){
+
+}else if( similar condition){
+
+}else{
+
+}
+
+Case 2:
+if (condition){
+
+}if(similar condition){
+
+}else{
+
+}
+
+
+In case 1 vs Case 2 there is a chance in case 2 that both the conditions get true and both the code runs when all we neede was the first statements or the second statements to run. Hence it's always good to check the code before it runs.
+
+`score = 50;
+if (score > 33 || attendance > 40) {
+    console.log("Haww Pass");
+
+} else {
+    console.log("Hehe Fail")
+}`
+In the code above. The first condition becomes true because the code says  for attendance doesn't get evaluated. hence the condition gets true in the first condition we never check attendance hence it never gives us an error for the OR function. 
