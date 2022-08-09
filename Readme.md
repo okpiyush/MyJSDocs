@@ -26,7 +26,7 @@
 - This is the reason why A JS variable can store any kind of data without any extra hassle.
 - <Variable> -> "zeeshan" (Variable name points to the value of the variable);
 
-**File name for the below Concepts **: Define.js
+>**File name for the below Concepts **: Define.js
 
 ***Conditions for Variable Names***
 - Cannot start with a number
@@ -99,10 +99,21 @@ Case 2:
 
 In case 1 vs Case 2 there is a chance in case 2 that both the conditions get true and both the code runs when all we neede was the first statements or the second statements to run. Hence it's always good to check the code before it runs.
 
-`score = 50;
+`let score = 50;
 if (score > 33 || attendance > 40) {
     console.log("Haww Pass");git push -u origin main
 } else {
     console.log("Hehe Fail")
 }`
 In the code above. The first condition becomes true because the code says  for attendance doesn't get evaluated. hence the condition gets true in the first condition we never check attendance hence it never gives us an error for the OR function. 
+
+
+> **File name for the below :** function.js
+
+- We declare a function using the following syntax :
+`function function_name(variable){
+  //statement for the function.
+  // Use return to return values from the function. 
+}`
+
+**As we can change any variable to any type of data and return any type of data type from the return statement of a function. Therefore JS is called a weakly typed language**
