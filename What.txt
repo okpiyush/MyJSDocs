@@ -1,0 +1,5 @@
+// Some basic JS functions and Uses
+//Questions from    
+    // Output Based
+    // Polyfills
+    // Functional Programming : 
