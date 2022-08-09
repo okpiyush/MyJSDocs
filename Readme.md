@@ -85,30 +85,23 @@ conditional statement runs according to the boolean and condition state in it.
 The correct way to pass multiple if is to apply 
 
 Case 1:
-if(condition){
-
+`if(condition){
 }else if( similar condition){
-
 }else{
-
-}
+}`
 
 Case 2:
-if (condition){
-
+`if (condition){
 }if(similar condition){
-
 }else{
-
 }
-
+`
 
 In case 1 vs Case 2 there is a chance in case 2 that both the conditions get true and both the code runs when all we neede was the first statements or the second statements to run. Hence it's always good to check the code before it runs.
 
 `score = 50;
 if (score > 33 || attendance > 40) {
-    console.log("Haww Pass");
-
+    console.log("Haww Pass");git push -u origin main
 } else {
     console.log("Hehe Fail")
 }`
