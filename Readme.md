@@ -117,3 +117,26 @@ In the code above. The first condition becomes true because the code says  for a
 }`
 
 **As we can change any variable to any type of data and return any type of data type from the return statement of a function. Therefore JS is called a weakly typed language**
+
+> **File name for the below :** jslect3.js
+
+- When we declare a variable and don't pass it's value. The JS compiler points it's value towards **Undefined**
+- If we dont defined a variable and log it. It gives us an error for it.
+- Uses of Undefined :
+  - we made a form and took input from a user for email variable. but the user didnt give the email for it and pressed the submit button.
+  - if nothing is returned in a fucntion and the value for function is stored in a variable then JS points the variable to **undefined**
+  - WE can use undefiend to reset a value from the form while we are taking a value from the form.
+
+- Cases when Undefined can occur :
+  - Variable declaration but no assignment 
+  - No argument passed to function
+  - nothing is returned from function.
+
+-How to judge if undefined is implicitly defined or Explicitly defined :
+  - Instead of undefined we provide null to the email.
+  - Whereas compiler provides Undefined to the email.
+> hence when we can differentiate if the undefined is user defined or js defined
+
+-In cases where we can have Undefined as an input in a function to stop that from happening we use Default values in function for the fucntion to not take undefined as an input
+
+
