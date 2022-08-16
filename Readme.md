@@ -140,3 +140,35 @@ In the code above. The first condition becomes true because the code says  for a
 -In cases where we can have Undefined as an input in a function to stop that from happening we use Default values in function for the fucntion to not take undefined as an input
 
 
+> **File name for the below :** Objects.js
+
+- Objects are a data type that containes many different properties that can be accessed accordingly using .functions.
+- We can edit these properties similarly or can print the object itself properly.
+- We can call it's value accordingly and show it's indivisual values and the properties itself.
+
+
+>**File name for the below :** Methods.js
+
+- Properties of an Object that are also a function is called methods.
+- Methods are inside an object and deals with it's parameters and properties.
+- We call a method using ObjectName.FunctionalProperty.
+- THIS keyword
+  - this keyword points towards it's own self and when accessed using this shows it's very own properties and functions.
+
+
+> **File name for the below :**StringPropertiesAndMethods.js
+
+When we assign a string to a variable then it automatically gets converted into a object as it has its own methods and properties.
+Functions in string class :
+  - toUpperCase() : Changes all the character to uppercase
+  - toLowerCase() : changes all the character to lowercase
+  - trim() : Removes all the whitespaces that are on the either side of the string.
+
+
+> **File name for the below :**loopsi in arrays.jslect3
+
+We can use loops in two ways.
+  - Use of loop in cpp way. ie 
+    - `for (let i=0;i<n;i++){}` (iterates in from  0 to n)
+  - Use of loop to iterate in arrays. 
+    - `for(let name of names){}` {uses a name variable to iterate in an array(names)}
