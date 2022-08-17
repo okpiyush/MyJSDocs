@@ -172,3 +172,39 @@ We can use loops in two ways.
     - `for (let i=0;i<n;i++){}` (iterates in from  0 to n)
   - Use of loop to iterate in arrays. 
     - `for(let name of names){}` {uses a name variable to iterate in an array(names)}
+
+
+
+
+
+***Level 2 In JavaScript***
+
+
+**File name for the below :**Objects.js;
+- We can create a Javascript object with the let command.
+  - ` let object ={property1 :"",property2 :"",property3 :""}`;
+- To access an object we can just use console.log to log it into the console.log
+  - console.log(object); 
+- To access any special property of an object we can just use console.log with the object name followed by the property we need to access with a dot between them.
+  - console.log(object.property);
+- To delete a property of a JS object we use the "delete" command.
+  - ` delete object.property1`
+
+
+- Declaring a JS object
+  - We can declare using 3 methods
+    - `let object ={property1 :"",property2 :"",property3 :""}`
+    - `const object ={property1 :"",property2 :"",property3 :}`
+
+
+
+**File name for the below :** const.js
+- Usage of const:
+  - We use a const function to declare a object and we cannot reassign it to a new point in the memory space.
+  - But we can change the inner elements stored in the object and the properties of the object.
+  - Same goes for the Arrays
+
+| let              	| const            	| var           	|
+|------------------	|------------------	|---------------	|
+| cannot redeclare 	| cannot redeclare 	| can redeclare 	|
+| can reassign     	| cannot reasssign 	| can reassign  	|
