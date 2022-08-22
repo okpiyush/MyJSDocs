@@ -204,7 +204,49 @@ We can use loops in two ways.
   - But we can change the inner elements stored in the object and the properties of the object.
   - Same goes for the Arrays
 
+*Difference between different JS declaration type.*
+
 | let              	| const            	| var           	|
 |------------------	|------------------	|---------------	|
 | cannot redeclare 	| cannot redeclare 	| can redeclare 	|
 | can reassign     	| cannot reasssign 	| can reassign  	|
+
+***File name for the below :*** Execution.js
+**Hoisting**
+Memory allocation phase in which we allocate memory location to the variables is called Hoisting.
+
+Line : **4 to 13**
+| Memory allocation Phase                  	| Code execution phase                                                                                                      	|
+|-------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------	|
+| Num 2 : undefined <br>  greeting : func() 	| execution prints Undefined because in the code  we can see the num2 is assigned as Undefined. When the code was executed. 	|
+
+Line : **16 to 21**
+
+
+Line : **20 to 28**
+
+
+Line : **30 to 40**
+
+
+Line : **46 to 56**
+
+
+
+
+***File name for the above :*** block.js
+Block scope was introduced in JS in 2015
+> Blocks are {} in javascript. When the code written inside them it is called block of code.
+<br>
+> Blocks are executed line by line in javascript and they do not create execution context.
+<br>
+> Block scoped variables are not accessible outside the block scoped.
+- Block Scoped
+  - Let variable
+  - Const variable
+- Var is function scoped.
+> Function scoped variable can only be accessed inside the fucntion and it's scope.
+
+
+Let and Const variables cannot be accessed until and unless you have assigned a variable to it.
+Temporal Deadzone is the place where variables are assinged without any value and cannot be accessed.
