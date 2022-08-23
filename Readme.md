@@ -250,3 +250,35 @@ Block scope was introduced in JS in 2015
 
 Let and Const variables cannot be accessed until and unless you have assigned a variable to it.
 Temporal Deadzone is the place where variables are assinged without any value and cannot be accessed.
+
+
+| var                                               	| let                                                  	| const                                                	|
+|---------------------------------------------------	|------------------------------------------------------	|------------------------------------------------------	|
+| Can be redclared                                  	| cannot be redeclared                                 	| cannot redeclare                                     	|
+| can reassign                                      	| can reassign                                         	| cannot be reassigned                                 	|
+| function scoped                                   	| block scoped                                         	| block scoped                                         	|
+| hoisted and can be accessed before initialization 	| hoisted and cannot be accessed before initialization 	| hoisted and cannot be accessed before initialization 	|
+| Can be declared and initialized later             	| Can be declared and initialized later                	| We have to initialize at the time of declaring       	|
+
+
+> ***File name for the below***: ./functionalprogramming/higherorderfunction.js
+***Higher Order Functions***
+- A function that operate on other funcitons by taking them as arguments or return them are called Higher Order Functions.
+
+
+*Taking functions as Input*
+*Line 11 to 21*
+- we have passed a funciton inside the function and we can deduce that a function can be passed as a parameter.
+- Because fn is a parameter. when we log it in the console we get that the function where that particular parameter points gets printed.
+- But when we call it inside the function we can see it runs like a normal function.
+*Line 24 to 36*
+- We can straight up define funcitons inside the function call
+- Prints the functions without an issue but names it as anonymous function.
+
+
+**Callback Function**
+The function that is called inside another fucniton as an argument is called as callback function.
+
+*Giving functions as output*
+*Line 54 to*
+
