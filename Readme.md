@@ -280,5 +280,10 @@ Temporal Deadzone is the place where variables are assinged without any value an
 The function that is called inside another fucniton as an argument is called as callback function.
 
 *Giving functions as output*
-*Line 54 to*
+*Line 41 to 51*
+- the returning fucntion gives out a fucntion which gets pointed by res.
+- hence we can say that a fucntion can return a function.
 
+*Line 70 to 94*
+- To reduce redundancy in a code we extract the logic and then we can use it to check if that function is viable or not. This
+- Ex : in the getnumber code we extracted the logic and replaced the function with a less redundant funciton along with a supporting check function that made and gave out the required data and answer. 
