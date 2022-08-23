@@ -1,5 +1,8 @@
 // Some basic JS functions and Uses
 //Questions from    
-    // Output Based
+    // Output Based Questions (Concurrency)
+        //Hoisting based questions 
+        //Closures 
     // Polyfills
+        //
     // Functional Programming : 

@@ -19,9 +19,19 @@
 
 
 
-console.log(a) // Undefined;
-console.log(b) // cannot access
-console.log(c) // cannot access
-var a = 10;
-let b = 20;
-const c = 30;
+// console.log(a) // Undefined;
+// console.log(b) // cannot access
+// console.log(c) // cannot access
+// var a = 10;
+// let b = 20;
+// const c = 30;
+
+
+
+let score = 50;
+if (score > 33) {
+    ispassed = false;
+} else {
+    ispassed = true;
+}
+console.log(ispassed);
