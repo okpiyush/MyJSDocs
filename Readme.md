@@ -293,3 +293,19 @@ The function that is called inside another fucniton as an argument is called as 
 - Or we can use the let item type to iterate in a function.
 - Or we can use the **forEach** method.
   - >arr.forEach(function(item){console.log(item)});
+
+Polyfills : Functions that are similar to predefined functions but are made by us. so that if a built-in function is not supported in any web browser. it gets filled in with that particular functionso that it can work.
+
+
+- arr.forEach() function : iterates in an array for it's elements and performs funcitons on it.
+- arr.map() function :  Iterates in the array and forms a new array in a new memory lcoation with the desired functions and changes implemented on it.
+  
+- arr.filter(): takes a function as an input which is then used to mark the valeus of an array as true and false. the true ones gets returned into a new array and false ones gets rejected for the new array.
+
+***File Name for the below :*** Closures.js
+- whenever we return a function, it gets returned with its lexical enviornment.
+- Hence even when the outer Execution COntext gets destroyed after it's execution. It still got printed as HELLO.
+- Therefore we can say closure is a combination of function together enclosed with references to it's surrounding state or lexical enviornment.
+- Work : Real world case of closure.
+- 
+
