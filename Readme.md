@@ -304,8 +304,45 @@ Polyfills : Functions that are similar to predefined functions but are made by u
 
 ***File Name for the below :*** Closures.js
 - whenever we return a function, it gets returned with its lexical enviornment.
-- Hence even when the outer Execution COntext gets destroyed after it's execution. It still got printed as HELLO.
+- Hence even when the outer Execution Context gets destroyed after it's execution. It still got printed as HELLO.
 - Therefore we can say closure is a combination of function together enclosed with references to it's surrounding state or lexical enviornment.
 - Work : Real world case of closure.
-- 
 
+
+***Filename for the below :*** Prototypes.js
+- Prototypes are the fallback source of all properties.
+- Whenever you log the person in the console you will see the whole object gets printed with a new property named as Protoype.
+- When expanded gives us the full access to the property which is a object in itself  with it's own set of properties and functions.
+- GetInstaId gives us an error becuase it's neither an inbuilt funciton nor it has been defined but to String is an Instant function of the object hence it gives us an output as object object.
+- When a function doesn't find anything specific in the Object itself (ie, Method or Property), then it starts to look for something in It's Prototype where if it finds a method then executes it or it ends up giving an error.
+- Hence we can say, **Prototype is a Fallback Source for Properties** . Where a functions searches for Callable methods or properties and
+- To print a simple prototype of any object. Execute (Object.prototype) in console.
+- We can see prototype of an object usign (ObjectName.__proto__)
+- Object -> .__proto__ -> Prototype of Object -> .__proto__ -> NULL
+-  When we create an array in JS. THe JS creates an Object out of that array with it's very own property and methods. TO view all the properties in an array. We can use .__proto__.
+-  Which gives us Many different functions to work with on an Array Object.
+
+- The Prototypal Chaining 
+  - Array is defined by us in the code.
+  - Js creates an Object out of that array.
+  - Array prototypal chain
+    - Array.__proto__ gives us a prototype of an array Object.
+    - Array.__proto__.__proto__ gives a prototype of the Array Object Protoype.
+    - Array.__proto__.__proto__.__proto__ gives us a NULL because we cannot create any prototype anymore. 
+  - String Prototypal Chaining
+    - Array.__proto__ gives us a prototype of an array Object.
+    - Array.__proto__.__proto__ gives a prototype of the Array Object Protoype.
+    - Array.__proto__.__proto__.__proto__ gives us a NULL because we cannot create any prototype anymore. 
+
+***File Name for the Below :*** ./functionalprogramming/constructorfunction.js
+
+- When we create a functtion and define it to another variable normally. It gives us a simple funciton with a new variable assigned towards it. The
+- But If we use New just before the assignment of the variable. It becomes and Acts like a constructor and the funciton starts to behave like an object creator. Where we can define it's own property.
+- > let person1=new person();
+- We can also define methods inside the function and hence in the constructor. Where we use the function inside function to define it in the defining phase.
+
+- Prototypal Chain
+  - new Person() created
+  - Person prototype is created
+  - Person prototype's prototype is created
+  - Null if we use protoype funciton any further

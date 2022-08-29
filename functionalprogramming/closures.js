@@ -11,10 +11,10 @@ fn();
 
 
 //Real world closure
-function counter() {
-    let count = 0;
-    return {
-        getCount: function() { return count; },
-        increment: function() { count++; }
-    }
-}
+// function counter() {
+//     let count = 0;
+//     return {
+//         getCount: function() { return count; },
+//         increment: function() { count++; }
+//     }
+// }
