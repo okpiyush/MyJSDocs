@@ -310,6 +310,8 @@ Polyfills : Functions that are similar to predefined functions but are made by u
 
 
 ***Filename for the below :*** Prototypes.js
+
+- Every Object has a Prototype. 
 - Prototypes are the fallback source of all properties.
 - Whenever you log the person in the console you will see the whole object gets printed with a new property named as Protoype.
 - When expanded gives us the full access to the property which is a object in itself  with it's own set of properties and functions.
@@ -329,14 +331,16 @@ Polyfills : Functions that are similar to predefined functions but are made by u
     - Array.__proto__ gives us a prototype of an array Object.
     - Array.__proto__.__proto__ gives a prototype of the Array Object Protoype.
     - Array.__proto__.__proto__.__proto__ gives us a NULL because we cannot create any prototype anymore. 
+  
   - String Prototypal Chaining
     - Array.__proto__ gives us a prototype of an array Object.
     - Array.__proto__.__proto__ gives a prototype of the Array Object Protoype.
     - Array.__proto__.__proto__.__proto__ gives us a NULL because we cannot create any prototype anymore. 
 
 ***File Name for the Below :*** ./functionalprogramming/constructorfunction.js
-
-- When we create a functtion and define it to another variable normally. It gives us a simple funciton with a new variable assigned towards it. The
+- Everything's an Object in JS.
+- When we create a function and define it to another variable normally. It gives us a simple funciton with a new variable assigned towards it and that too being the returned Variable.
+- We can Add property and methods inside constructor fucniton using this.property inside the defination of function.
 - But If we use New just before the assignment of the variable. It becomes and Acts like a constructor and the funciton starts to behave like an object creator. Where we can define it's own property.
 - > let person1=new person();
 - We can also define methods inside the function and hence in the constructor. Where we use the function inside function to define it in the defining phase.
@@ -345,4 +349,52 @@ Polyfills : Functions that are similar to predefined functions but are made by u
   - new Person() created
   - Person prototype is created
   - Person prototype's prototype is created
-  - Null if we use protoype funciton any further
+  - Null if we use protoype funciton any further4.
+
+
+
+>Filename for the below : **Asynchronous.js**
+***Asynchronus Programming***
+- JS is a single threaded programming language.
+- i.e : It executes one process at a time.  
+- Global Execution Context is created and subsequent function calls create subsequent function context.
+- We cannot run Multiple statements at once in javascript.
+- And we cannot change the synchronicity of the execution context and the code.
+-  Hence we cannot run a specific statement after n time in javascript.
+-  setTimeout() : Set timeout funciton is used to execute it after a time delay in the javascript execution context.
+-  Objects , Functions , Arrays , Strings are part of JavaScript.
+-  Console is not a part of JS and so is SetTimeout(function(){ }).
+-  The above mentioned are part of the Browser and servers.
+ 
+> File name for the below : **Browser.js**
+***Browser***
+- Browser has the following features :
+  - console
+  - viewport
+  - location 
+  - camera
+  - storage
+  - URL
+  - Timer
+- Javascript has the following features :
+  - JS Engine
+  - Call Stack
+- When we execute a function in js and we run it in browser.
+- The browser provides a window object to JS execution context because with the help of which it can actually use the functionalities present in their Object.
+- Window object has methods like console, viewport and other methods which gets executed without a problem in js.
+
+
+***Instagram Clone***
+**Question**
+- Create a function step 1: Which takes input from the user for the Image.
+- Create a function step 2 : Which gives out caption for the user. 
+- ***Concurrency***
+  - Whenever we have to use a function after a particular function. Then at that moment we will have to use the callback function.
+  - **Callback Hell**
+    - The Pyramid Structure that we form when we introduce callback after callback is called Callback Hell.
+- ***Promises***
+  - Promise is a inbuilt constructor function.
+  - If we use resolve inside a promise then when promise is resolved. Then we can see that the promise calls the then function and the function inside that method.
+  - Hence we can Say
+    - Promise.then houses the resolve function and its parameter.
+  - As when we assign another function after a comma to the **promise.then** function then it is use for the error type. 
